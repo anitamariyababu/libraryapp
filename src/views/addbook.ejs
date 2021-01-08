@@ -27,7 +27,7 @@
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-        <%for(i=0;i<4;i++){%>
+        <%for(i=0;i<5;i++){%>
         <li>
           <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
         </li>
@@ -95,19 +95,19 @@
           <form action="/addbook/add">
             <div class="form-group">
                 <label for="name">Book Name:</label>
-                <input type="text" name="bookname" class="form-control" id="bks">
+                <input type="text" name="bookname"  class="form-control" id="bks" required>
             </div>
             <div class="form-group">
                 <label for="author">Authors Name:</label>
-                <input type="text" name="authorname" class="form-control" id="aus">
+                <input type="text" name="authorname"  class="form-control" id="aus" required>
             </div>
             <div class="form-group">
                 <label for="genre">Genre:</label>
-                <input type="text" name="genre" class="form-control" id="bks">
+                <input type="text" name="genre" class="form-control" id="bks" required>
             </div>
             <div class="form-group">
               <label for="image">Image:</label>
-              <input type="file" name="image" class="form-control" id="bks">
+              <input type="file" name="image" class="form-control" id="bks" required>
           </div>
 
 

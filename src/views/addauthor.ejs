@@ -27,7 +27,7 @@
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-        <%for(i=5;i<nav.length;i++){%>
+        <%for(i=0;i<5;i++){%>
         <li>
           <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
         </li>
@@ -51,7 +51,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <h1>SignIn
+        <h1>AddAuthor
           <p class="lead"></p>
         </h1>
       </div>
@@ -90,43 +90,33 @@
           
           
     
-        <!-- sign in -->
-        <div class="row justify-content-center">
-          <div class="col-lg-2"></div>
-          <div class="col-lg-4 mymargin">
-            <form action="/books" class="login" >
-               <h2>User Sign In</h3> 
-              <br>
-              <div class="login-cont">
-                  <label >Email</label>
-                  <br>
-                  <input type="text" pattern="^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?$" required placeholder="enter the emailaddress"  style="width:100%;border-radius:1.5rem;height:3rem;">
-              </div>  
-              <div class="login-cont">
-                   <label >Password</label>
-                   <br>
-                    <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" required placeholder="enter the password" id="pws" onkeyup="return password()" style="width:100%;border-radius:1.5rem;height: 3rem;">
-              </div>
-              <br>
-              <div>
-                  <button id="login-button">Sign In</button>
-                  
-              </div>
-              <br>
-              <div class="login-misc">
-                  <h5>Don't have an account</h5>
-                   <a href="/signup">Sign up</a> 
-              </div>
-          </form>
+        <!-- addbook-->
+        <div class="col-sm-6 col-md-6 col-sm-offset-3">
+          <form action="/addauthor/admin">
+            <div class="form-group">
+                <label for="name">Author Name:</label>
+                <input type="text" name="bookname" class="form-control" id="bks" required>
+            </div>
+            <div class="form-group">
+                <label for="author">DOB:</label>
+                <input type="text" name="authorname" class="form-control" id="aus" required>
+            </div>
+            <div class="form-group">
+                <label for="genre">Genre:</label>
+                <input type="text" name="genre" class="form-control" id="bks" required>
+            </div>
+            <div class="form-group">
+              <label for="image">Image:</label>
+              <input type="file" name="image" class="form-control" id="bks" required>
           </div>
-          <div class="col-lg-2"></div>
-        </div>
-    <!-- sign in-->
-          
 
-          
-          
-          <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a>
+
+            <button type="submit">Addauthor</button>
+          </form>
+        </div>
+  
+    <!-- addbook-->
+     <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a>
         
           
         </div>
@@ -180,6 +170,6 @@
 </footer>
 	<!-- script references -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 	</body>
 </html>

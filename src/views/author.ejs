@@ -27,7 +27,7 @@
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-        <%for(i=0;i<nav.length;i++){%>
+        <%for(i=0;i<5;i++){%>
         <li>
           <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
         </li>
@@ -99,7 +99,7 @@
               <h3><%=author.name%></h3>
               <div class="row">
                 <div class="col-xs-9">
-                  <h4><span class="label label-default"><%=author.book%></span></h4><h4>
+                  <h4><span class="label label-default"><%=author.dob%></span></h4><h4>
                   <small style="font-family:courier,'new courier';" class="text-muted"><%=author.genre%> •
                   </h4></div>
                 <div class="col-xs-3"></div>

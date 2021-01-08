@@ -5,19 +5,19 @@ function router(nav){
     var authors = [
         {
             name:'Joseph Barbera',
-            book:'Tom and Jerry',
+            dob:'24 March 1911',
             genre:'Cartoon',
             img: "joseph.jpg"
         },
         {
             name:'J k Rowling',
-            book:'Harry Potter',
+            dob:'31 July 1965',
             genre:'Fantasy',
             img: "rowling.jpg"
         },
         {
             name:'Vaikom Muhammed Basheer',
-            book:'Paathumayude Aadu',
+            dob:'21 January 1908',
             genre:'Drama',
             img: "basheer.jpg"
         }
